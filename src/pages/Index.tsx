@@ -340,12 +340,6 @@ const Index: React.FC = () => {
       
       {/* ADDED: Enhanced SEO Content Sections */}
       
-      {/* Streamlined Local Information */}
-      <LocalPricingFactors />
-      
-      {/* Discounts Section */}
-      <InsuranceDiscounts />
-      
       {/* Comprehensive Coverage Analysis Section */}
       <section id="coverage-breakdown" className="py-16">
         <div className="container mx-auto px-4">
@@ -646,12 +640,6 @@ const Index: React.FC = () => {
       </section>
       
       
-      {/* Enhanced Pricing Factors - Merged from Component */}
-      <LocalPricingFactors />
-      
-      {/* Enhanced Discounts Section - Merged from Component */}
-      <InsuranceDiscounts />
-      
       {/* Calculators Section */}
       <section className="py-16 bg-muted">
         <div className="container mx-auto px-4">
@@ -889,8 +877,6 @@ const Index: React.FC = () => {
       <FAQSection />
       
       <TestimonialsSection />
-      
-      <FinalCTASection />
       
       <FinalCTASection />
       
