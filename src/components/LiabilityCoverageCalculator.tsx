@@ -258,7 +258,7 @@ const LiabilityCoverageCalculator: React.FC = () => {
           <p className="text-muted-foreground mb-6">
             Our local agents will review your specific situation and provide exact coverage recommendations and pricing.
           </p>
-          <Button variant="hero" size="lg" onClick={() => document.getElementById('compare-renewal')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button variant="hero" size="lg" onClick={() => document.getElementById('quote-form')?.scrollIntoView({ behavior: 'smooth' })}>
             <Shield className="h-5 w-5" />
             Get My Liability Quote
           </Button>

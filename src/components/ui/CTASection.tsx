@@ -25,7 +25,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
   className
 }) => {
   const scrollToForm = () => {
-    document.getElementById('compare-renewal')?.scrollIntoView({
+    document.getElementById('quote-form')?.scrollIntoView({
       behavior: 'smooth'
     });
   };

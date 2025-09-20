@@ -155,7 +155,7 @@ const HeroSection: React.FC = () => {
               
               
               
-              <Button variant="cta" size="xl" className="min-w-48" onClick={() => document.getElementById('compare-renewal')?.scrollIntoView({
+              <Button variant="cta" size="xl" className="min-w-48" onClick={() => document.getElementById('quote-form')?.scrollIntoView({
               behavior: 'smooth'
             })}>
                 <FileText className="h-5 w-5" />
@@ -215,7 +215,7 @@ const CompareRenewalForm: React.FC = () => {
         </CardContent>
       </Card>;
   }
-  return <Card className="w-full max-w-2xl mx-auto shadow-medium">
+  return <Card id="quote-form" className="w-full max-w-2xl mx-auto shadow-medium">
       <CardHeader>
         <CardTitle className="text-2xl">Get Instant Quote For Fulshear Home Insurance</CardTitle>
         <CardDescription className="text-base">
