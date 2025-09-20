@@ -58,51 +58,6 @@ export const FAQSection: React.FC = () => {
     question: "How does my credit score affect my homeowners insurance?",
     answer: "In Texas, carriers can use credit-based insurance scores to determine rates (where allowed by law). Better credit typically means lower premiums. This is separate from your regular credit score and focuses on insurance-related factors."
   }];
-
-  return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground">
-              Common questions about homeowners insurance in Fulshear, TX
-            </p>
-          </div>
-          
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
-                <AccordionTrigger className="text-left hover:no-underline">
-                  <div className="flex items-center gap-3">
-                    <HelpCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="font-semibold">{faq.question}</span>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pt-4 pb-2">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-          
-          <div className="mt-12 text-center">
-            <Card className="shadow-medium">
-              <CardContent className="p-8">
-                <h3 className="text-xl font-bold mb-4">Still Have Questions?</h3>
-                <p className="text-muted-foreground mb-6">
-                  Our local agents are here to help with specific questions about your Fulshear property.
-                </p>
-                <Button variant="hero" size="lg" onClick={() => window.location.href = `tel:${BUSINESS_DATA.phoneTel}`}>
-                  <Phone className="h-5 w-5" />
-                  Call {BUSINESS_DATA.phone}
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+  return;
 };
 export default FAQSection;
