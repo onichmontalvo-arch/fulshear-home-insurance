@@ -661,14 +661,6 @@ const Index: React.FC = () => {
                 <LiabilityCoverageCalculator />
               </div>
             </div>
-            
-            <div className="mt-8">
-              <CTASection
-                title="Get Personalized Calculations"
-                description="Our local agents will review your specific property and provide detailed coverage recommendations."
-                variant="card"
-              />
-            </div>
           </div>
         </div>
       </section>
