@@ -217,12 +217,23 @@ const CompareRenewalForm: React.FC = () => {
   }
   return <Card className="w-full max-w-2xl mx-auto shadow-medium">
       <CardHeader>
-        <CardTitle className="text-2xl">Compare My Renewal (Fast)</CardTitle>
+        <CardTitle className="text-2xl">Get Instant Quote For Fulshear Home Insurance</CardTitle>
         <CardDescription className="text-base">
-          Show us your current setup. We'll hunt every discount, fix costly gaps, and tell you straight if you're already in a great spot.
+          Get your personalized home insurance quote in minutes. Our local experts will find you the best coverage at competitive rates.
         </CardDescription>
       </CardHeader>
-      
+      <CardContent>
+        <div className="w-full">
+          <iframe 
+            src="https://link.apisystem.tech/widget/survey/XugDomnPwfQ7FCaMze8u"
+            width="100%"
+            height="600"
+            frameBorder="0"
+            className="rounded-lg"
+            title="Fulshear Home Insurance Quote Form"
+          />
+        </div>
+      </CardContent>
     </Card>;
 };
 
