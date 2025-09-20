@@ -889,8 +889,6 @@ const Index: React.FC = () => {
         </div>
       </section>
       
-      <FAQSection />
-      
       <TestimonialsSection />
       
       <FinalCTASection />
