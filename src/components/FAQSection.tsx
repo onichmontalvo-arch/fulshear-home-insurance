@@ -58,6 +58,58 @@ export const FAQSection: React.FC = () => {
     question: "How does my credit score affect my homeowners insurance?",
     answer: "In Texas, carriers can use credit-based insurance scores to determine rates (where allowed by law). Better credit typically means lower premiums. This is separate from your regular credit score and focuses on insurance-related factors."
   }];
-  return;
+
+  return (
+    <section className="py-16 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <Badge variant="secondary" className="mb-4">
+            <HelpCircle className="h-4 w-4 mr-2" />
+            Frequently Asked Questions
+          </Badge>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Your Homeowners Insurance Questions Answered
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Get expert answers to common questions about homeowners insurance in Fulshear and Fort Bend County.
+          </p>
+        </div>
+
+        <div className="max-w-4xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left font-semibold">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground pt-4">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+
+          <Card className="mt-12 bg-primary/5">
+            <CardHeader>
+              <CardTitle className="text-center">Still Have Questions?</CardTitle>
+              <CardDescription className="text-center">
+                Our local insurance experts are here to help with personalized advice for your Fulshear home.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-center">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.location.href = `tel:${BUSINESS_DATA.phoneTel}`}
+              >
+                <Phone className="h-5 w-5 mr-2" />
+                Call {BUSINESS_DATA.phone} for Expert Advice
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
 };
 export default FAQSection;
