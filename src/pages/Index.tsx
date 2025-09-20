@@ -338,9 +338,6 @@ const Index: React.FC = () => {
         </div>
       </section>
       
-      {/* FAQ Section */}
-      <FAQSection />
-      
       {/* ADDED: Enhanced SEO Content Sections */}
       
       {/* Streamlined Local Information */}
@@ -889,7 +886,11 @@ const Index: React.FC = () => {
         </div>
       </section>
       
+      <FAQSection />
+      
       <TestimonialsSection />
+      
+      <FinalCTASection />
       
       <FinalCTASection />
       
